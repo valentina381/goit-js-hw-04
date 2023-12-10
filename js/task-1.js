@@ -4,6 +4,8 @@ function isEnoughCapacity(products, containerSize) {
   let totalWeight = 0;
 
   for (const product in products) {
+    if (products.hasOwnProperty(product)) {
+    }
     totalWeight += products[product];
   }
 
